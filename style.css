@@ -1,0 +1,125 @@
+.topo-pagina{
+    background-color: #084c85;
+    padding: 10px; 
+    width: 100%;
+    margin:0px;
+    box-sizing: border-box;
+    margin-bottom: 40px;
+
+}
+
+.topo-pagina a{
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+header p a:hover {
+  color: #07d7f3; /* Muda a cor para branco */
+}
+
+.topo-pagina img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.novidades-box{
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #084c85;
+    border: 1px solid #336699;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.novidades-box h2 {
+  font-family: 'Open Sans', sans-serif; /* Usando a fonte que sugerimos antes */
+  font-size: 2em;
+  color: #e0deca; /* Cor amarela para o título, para combinar */
+  margin-bottom: 20px;
+}
+
+body{
+    background-color: #1121b1;
+    margin: 0;
+    padding: 0;
+}
+ 
+.banner-container {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;    
+}
+
+.banner-container img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  border-radius: 20px;
+}
+
+
+.banner-container img:nth-child(1) {
+    opacity: 1;
+}
+
+@keyframes slide{
+    0% {opacity: 1;}
+    45% {opacity: 1;}
+    50%{opacity: 0;}
+    95% {opacity: 0;}
+    100%{opacity: 1;}
+}
+
+.banner-container img:nth-child(1){
+    animation: fade-in-out 7s infinite;  
+}
+
+.banner-container img:nth-child(2){
+    animation: slide 7s infinite;
+    animation-delay: 3s;
+}
+
+body{
+    background-color: #186079;
+    color: #e0deca
+}
+
+.info-box{
+    background-color: #084c85;
+    padding: 10px;
+    margin: 30px;
+    border-radius: 10px;
+    max-width: 1350px;
+    
+}
+
+.info-boxContato{
+    background-color: #084c85;
+    padding: 10px;
+    margin: 30px;
+    border-radius: 10px;
+    max-width: 850px;
+    
+}
+
+.contato{
+    color:#F0E68C;
+    transition: color 0.3s ease; 
+
+}
+
+.contato:hover {
+  color: #afd620;
